@@ -1,0 +1,80 @@
+/* CSS */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+
+    text-align: center;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/75/7b/0c/757b0cd634697b72cb377e1a2a2964ac.gif");
+    background-size: 115%;
+    background-position: center;
+}
+
+#title {
+    font-size: 3rem;
+    background-color: #ece076cb;
+    padding: 1.5rem;
+}
+
+#gameBoard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* TRIED TO SHRINK THE BOARD WITH THE SCREEN SIZE, WON'T  WORK :'( */
+
+#ticBoard {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+    width: 60vh;
+    height: 60vh;
+    background-color: #e7ecefc0 ;
+    border-radius: 15px;
+}
+
+#resetBoard {
+    flex-shrink: 2;
+    font-size: 1.5rem;
+    background-color: #4773a3c6;
+    border-radius: 15px;
+    padding: 5rem;
+}
+
+#nextGame {
+    flex-shrink: 1;
+    font-size: 1rem;
+    background-color: #3C5946;
+    border-color: #2A443E;
+    padding: 1rem;
+}
+
+.buttons {
+    width: 20vh;
+    height: 20vh;
+    font-size: 12vh;
+    background: none;
+    text-align: center;
+    border: 3px solid #2A443E;
+}
+
+.buttons:nth-child(-n+3) {
+    border-top: none;
+}
+
+.buttons:nth-child(3n+1) {
+    border-left: none;
+}
+
+.buttons:nth-child(3n+3) {
+    border-right: none;
+}
+
+.buttons:nth-last-of-type(-n+3) {
+    border-bottom: none;
+}

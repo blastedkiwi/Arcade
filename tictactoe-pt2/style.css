@@ -1,0 +1,83 @@
+/* THE GAME MAY NOT FUNCTION FULLY *YET*, BUT I TRIED MY BEST TO MAKE IT PRETTY */
+
+/* CSS */
+
+* {
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+
+    text-align: center;
+}
+
+body {
+    background-image: url("https://i.pinimg.com/originals/75/7b/0c/757b0cd634697b72cb377e1a2a2964ac.gif");
+    background-size: 115%;
+    background-position: center;
+}
+
+#title {
+    font-size: 3rem;
+    background-color: #ece076cb;
+    padding: 1.5rem;
+}
+
+#gameBoard {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#ticBoard {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vh;
+    height: 60vh;
+    background-color: #e7ecefc0 ;
+    border-radius: 15px;
+}
+
+#playerBoard {
+    font-size: 1.5rem;
+    background-color: #4773a3c6;
+    border-radius: 15px;
+    padding: 3rem;
+}
+
+input {
+    font-size: 1rem;
+    background-color: #e7ecef;
+    border-color: #2A443E;
+    padding: 1rem;
+}
+
+.start {
+    font-size: 1rem;
+    background-color: #3C5946;
+    border-color: #2A443E;
+    padding: 1rem;
+}
+
+.cell {
+    width: 20vh;
+    height: 20vh;
+    font-size: 12vh;
+    background: none;
+    text-align: center;
+    border: 3px solid #2A443E;
+}
+
+.cell:nth-child(-n+3) {
+    border-top: none;
+}
+
+.cell:nth-child(3n+1) {
+    border-left: none;
+}
+.cell:nth-child(3n+3) {
+    border-right: none;
+}
+
+.cell:nth-last-of-type(-n+3) {
+    border-bottom: none;
+}
